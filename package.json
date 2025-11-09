@@ -1,0 +1,37 @@
+{
+  "name": "cmbm-admin-tools",
+  "version": "1.0.0",
+  "description": "CMBM Administrative CLI Tools - User management, database operations, and system maintenance",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "admin:create": "node src/manage-site-admin.js create",
+    "admin:verify": "node src/verify-admin.js",
+    "admin:update-password": "node src/manage-site-admin.js update-password",
+    "admin:reset-password": "node src/manage-site-admin.js reset-password",
+    "recipes:analyze": "node src/analyze-recipes.js",
+    "mongo:test": "node src/mongo-connect-test.js"
+  },
+  "bin": {
+    "cmbm-admin": "bin/admin-runner.sh"
+  },
+  "keywords": [
+    "cmbm",
+    "admin",
+    "cli",
+    "tools",
+    "user-management",
+    "mongodb"
+  ],
+  "author": "CMBM Team",
+  "license": "SEE LICENSE IN LICENSE",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "mongodb": "^6.3.0",
+    "dotenv": "^16.3.1",
+    "yargs": "^17.7.2"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}
