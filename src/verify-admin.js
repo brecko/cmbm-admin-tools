@@ -3,7 +3,7 @@
  * Quick script to verify admin users in the database
  */
 
-const { MongoClient } = require('mongodb');
+import { MongoClient } from 'mongodb';
 
 const MONGO_URI = process.env.MONGO_URI || 'mongodb://127.0.0.1:27017/mixerdb';
 const DB_NAME = 'mixerdb';
